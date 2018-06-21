@@ -7,19 +7,19 @@
   
   <title>常用git命令 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="##专用名词译名  Workspace : 工作区 Index / Stage ： 暂存区 Repository : 仓库区（或本地仓库） Remote : 远程仓库  ##一、新建代码库 # 在当前目录新建一个Git代码库 $ git init  # 新建一个目录，将其初始化为Git代码库 $ git init [project-name]  # 下载一个项目和它的整个代码历史 $ git c">
+  <meta name="description" content="专用名词译名 Workspace : 工作区 Index / Stage ： 暂存区 Repository : 仓库区（或本地仓库） Remote : 远程仓库  一、新建代码库# 在当前目录新建一个Git代码库 $ git init  # 新建一个目录，将其初始化为Git代码库 $ git init [project-name]  # 下载一个项目和它的整个代码历史 $ git clone [">
 <meta name="keywords" content="git">
 <meta property="og:type" content="article">
 <meta property="og:title" content="常用git命令">
 <meta property="og:url" content="http://yoursite.com/2018/06/21/常用git命令/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="##专用名词译名  Workspace : 工作区 Index / Stage ： 暂存区 Repository : 仓库区（或本地仓库） Remote : 远程仓库  ##一、新建代码库 # 在当前目录新建一个Git代码库 $ git init  # 新建一个目录，将其初始化为Git代码库 $ git init [project-name]  # 下载一个项目和它的整个代码历史 $ git c">
+<meta property="og:description" content="专用名词译名 Workspace : 工作区 Index / Stage ： 暂存区 Repository : 仓库区（或本地仓库） Remote : 远程仓库  一、新建代码库# 在当前目录新建一个Git代码库 $ git init  # 新建一个目录，将其初始化为Git代码库 $ git init [project-name]  # 下载一个项目和它的整个代码历史 $ git clone [">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://i.loli.net/2018/06/21/5b2b73034df1b.png">
-<meta property="og:updated_time" content="2018-06-21T09:46:09.190Z">
+<meta property="og:updated_time" content="2018-06-21T09:47:58.358Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="常用git命令">
-<meta name="twitter:description" content="##专用名词译名  Workspace : 工作区 Index / Stage ： 暂存区 Repository : 仓库区（或本地仓库） Remote : 远程仓库  ##一、新建代码库 # 在当前目录新建一个Git代码库 $ git init  # 新建一个目录，将其初始化为Git代码库 $ git init [project-name]  # 下载一个项目和它的整个代码历史 $ git c">
+<meta name="twitter:description" content="专用名词译名 Workspace : 工作区 Index / Stage ： 暂存区 Repository : 仓库区（或本地仓库） Remote : 远程仓库  一、新建代码库# 在当前目录新建一个Git代码库 $ git init  # 新建一个目录，将其初始化为Git代码库 $ git init [project-name]  # 下载一个项目和它的整个代码历史 $ git clone [">
 <meta name="twitter:image" content="https://i.loli.net/2018/06/21/5b2b73034df1b.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -90,15 +90,13 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p><img src="https://i.loli.net/2018/06/21/5b2b73034df1b.png" alt=""></p>
-<p>##专用名词译名</p>
-<ul>
+<h2 id="专用名词译名"><a href="#专用名词译名" class="headerlink" title="专用名词译名"></a>专用名词译名</h2><ul>
 <li>Workspace : 工作区</li>
 <li>Index / Stage ： 暂存区</li>
 <li>Repository : 仓库区（或本地仓库）</li>
 <li>Remote : 远程仓库</li>
 </ul>
-<p>##一、新建代码库</p>
-<pre><code># 在当前目录新建一个Git代码库
+<h2 id="一、新建代码库"><a href="#一、新建代码库" class="headerlink" title="一、新建代码库"></a>一、新建代码库</h2><pre><code># 在当前目录新建一个Git代码库
 $ git init
 
 # 新建一个目录，将其初始化为Git代码库
@@ -106,7 +104,7 @@ $ git init [project-name]
 
 # 下载一个项目和它的整个代码历史
 $ git clone [url]
-</code></pre><p>##二、配置<br>Git的设置文件为 .gitconfig , 它可以在用户主目录下（全局配置），也可以在项目目录下（项目配置）。</p>
+</code></pre><h2 id="二、配置"><a href="#二、配置" class="headerlink" title="二、配置"></a>二、配置</h2><p>Git的设置文件为 .gitconfig , 它可以在用户主目录下（全局配置），也可以在项目目录下（项目配置）。</p>
 <pre><code># 显示当前的Git配置
 $ git config --list
 
@@ -116,8 +114,7 @@ $ git config -e [--global]
 # 设置提交代码时的用户信息
 $ git config [--global] user.name &quot;[name]&quot;
 $ git config [--global] user.email &quot;[email address]&quot;
-</code></pre><p>##三、增加/删除文件</p>
-<pre><code># 添加指定文件到暂存区
+</code></pre><h2 id="三、增加-删除文件"><a href="#三、增加-删除文件" class="headerlink" title="三、增加/删除文件"></a>三、增加/删除文件</h2><pre><code># 添加指定文件到暂存区
 $ git add [file1] [file2] ...
 
 # 添加指定目录到暂存区，包括子目录
@@ -138,8 +135,7 @@ $ git rm --cached [file]
 
 # 改名文件，并且将这个改名放入暂存区
 $ git mv [file-original] [file-renamed]
-</code></pre><p>##四、代码提交</p>
-<pre><code># 提交暂存区到仓库区
+</code></pre><h2 id="四、代码提交"><a href="#四、代码提交" class="headerlink" title="四、代码提交"></a>四、代码提交</h2><pre><code># 提交暂存区到仓库区
 $ git commit -m [message]
 
 # 提交暂存区的指定文件到仓库区
@@ -157,8 +153,7 @@ $ git commit --amend -m [message]
 
 # 重做上一次commit，并包括指定文件的新变化
 $ git commit --amend [file1] [file2] ...
-</code></pre><p>##五、分支</p>
-<pre><code># 列出所有本地分支
+</code></pre><h2 id="五、分支"><a href="#五、分支" class="headerlink" title="五、分支"></a>五、分支</h2><pre><code># 列出所有本地分支
 $ git branch
 
 # 列出所有远程分支
@@ -200,8 +195,7 @@ $ git branch -d [branch-name]
 # 删除远程分支
 $ git push origin --delete [branch-name]
 $ git branch -dr [remote/branch]
-</code></pre><p>##六、标签</p>
-<pre><code># 列出所有tag
+</code></pre><h2 id="六、标签"><a href="#六、标签" class="headerlink" title="六、标签"></a>六、标签</h2><pre><code># 列出所有tag
 $ git tag
 
 # 新建一个tag在当前commit
@@ -227,8 +221,7 @@ $ git push [remote] --tags
 
 # 新建一个分支，指向某个tag
 $ git checkout -b [branch] [tag]
-</code></pre><p>##七、查看信息</p>
-<pre><code># 显示有变更的文件
+</code></pre><h2 id="七、查看信息"><a href="#七、查看信息" class="headerlink" title="七、查看信息"></a>七、查看信息</h2><pre><code># 显示有变更的文件
 $ git status
 
 # 显示当前分支的版本历史
@@ -288,8 +281,7 @@ $ git show [commit]:[filename]
 
 # 显示当前分支的最近几次提交
 $ git reflog
-</code></pre><p>##八、远程同步</p>
-<pre><code># 下载远程仓库的所有变动
+</code></pre><h2 id="八、远程同步"><a href="#八、远程同步" class="headerlink" title="八、远程同步"></a>八、远程同步</h2><pre><code># 下载远程仓库的所有变动
 $ git fetch [remote]
 
 # 显示所有远程仓库
@@ -312,8 +304,7 @@ $ git push [remote] --force
 
 # 推送所有分支到远程仓库
 $ git push [remote] --all
-</code></pre><p>##九、撤销</p>
-<pre><code># 恢复暂存区的指定文件到工作区
+</code></pre><h2 id="九、撤销"><a href="#九、撤销" class="headerlink" title="九、撤销"></a>九、撤销</h2><pre><code># 恢复暂存区的指定文件到工作区
 $ git checkout [file]
 
 # 恢复某个commit的指定文件到暂存区和工作区
@@ -344,15 +335,14 @@ $ git revert [commit]
 # 暂时将未提交的变化移除，稍后再移入
 $ git stash
 $ git stash pop
-</code></pre><p>##十、其他</p>
-<pre><code># 生成一个可供发布的压缩包
+</code></pre><h2 id="十、其他"><a href="#十、其他" class="headerlink" title="十、其他"></a>十、其他</h2><pre><code># 生成一个可供发布的压缩包
 $ git archive
 </code></pre><p>转载自<a href="http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html?utm_source=tool.lu" target="_blank" rel="noopener">阮一峰老师的博客</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/06/21/常用git命令/" data-id="cjiod3eei0001mkw5g0z14ylx" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/06/21/常用git命令/" data-id="cjiod671q0002f8w55ylhxcla" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/git/">git</a></li></ul>
