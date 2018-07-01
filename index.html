@@ -96,6 +96,65 @@
 	   
 	<div class="article-header">
 	    
+	     <a class="article-title" href="/2018/07/01/JS经典题目/">JS经典题目</a>  
+	       
+		 
+
+		<div class="article-meta">
+		
+		Jul 01, 2018
+
+		
+			<span class="iconfont icon-star"></span>		 
+			            
+			<a class="article-tag" href="/tags/JavaScipt/">JavaScipt</a>           
+			
+		
+		</div>
+
+	</div>
+
+
+	
+
+    
+	<div class="article-excerpt">	
+		
+			<h1 id="JS经典题目"><a href="#JS经典题目" class="headerlink" title="JS经典题目"></a>JS经典题目</h1><p>看到一道题目，在这里分享一下</p>
+<p>题目如下：<br></p>
+<pre><code>function Foo() {
+getName = function () { alert (1); };
+return this;
+}
+Foo.getName = function () { alert (2);};
+Foo.prototype.getName = function () { alert (3);};
+var getName = function () { alert (4);};
+function getName() { alert (5);}
+
+//请写出以下输出结果：
+Foo.getName(); 2
+getName(); 4
+Foo().getName(); 1
+getName(); 1
+new Foo.getName(); 2
+new Foo().getName(); 3 
+new new Foo().getName(); 3
+</code></pre>
+		  	  
+	</div>
+
+	<div class="article-bottom">
+		<a class="article-readmore" href="/2018/07/01/JS经典题目/">Continue</a> 	</div>	
+    
+</article>     
+     	
+      	  	
+
+  		
+    	<article class="article">		
+	   
+	<div class="article-header">
+	    
 	     <a class="article-title" href="/2018/06/25/分享一些个人认为好看的Hexo主题/">分享一些个人认为好看的Hexo主题</a>  
 	       
 		 
